@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flashcards</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSTPEL Flashcards</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <div class="flashcard-container">
-    <div id="flashcard" class="flashcard">
-      <div id="question"></div>
-      <div id="answer" class="answer"></div>
-      <button id="nextBtn">Next</button>
+  <div id="container">
+    <div id="card" class="card" title="Click to flip">
+      <div class="card-inner">
+        <div class="card-face card-front" id="cardFront">Loading cards...</div>
+        <div class="card-face card-back" id="cardBack"></div>
+      </div>
     </div>
+    <div class="controls-wrapper">
+      <button class="control-button" onclick="prevCard()">
+        <span class="material-icons">arrow_back</span> Previous
+      </button>
+      <div id="progress">1 / 1</div>
+      <button class="control-button" onclick="nextCard()">
+        Next <span class="material-icons">arrow_forward</span>
+      </button>
+    </div>
+    <div class="controls-wrapper">
+      <button class="control-button" id="playButton" onclick="startAutoplay()">
+        <span class="material-icons">play_arrow</span> Play
+      </button>
+      <button class="control-button" id="pauseButton" onclick="pauseAutoplay()" style="display: none;">
+        <span class="material-icons">pause</span> Pause
+      </button>
+    </div>
+    <div class="controls-wrapper">
+      <label>Question Time: <input type="number" id="questionTime" min="1" onchange="updateQuestionTime()"></label>
+      <label>Answer Time: <input type="number" id="answerTime" min="1" onchange="updateAnswerTime()"></label>
+    </div>
+    <label><input type="checkbox" id="randomToggle" onchange="toggleRandom()"> Randomize</label>
   </div>
-
   <script src="questions.js"></script>
   <script src="script.js"></script>
 </body>

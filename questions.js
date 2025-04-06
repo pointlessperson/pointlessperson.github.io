@@ -1,7 +1,7 @@
 const cards = [
   {
     question: "A: Miten ilmavirtaus tarkistetaan?",
-    answer: "Tunnustelee paljaalla kädellä/poskella ilmavirtausta"
+    answer: "Tunnustelemalla paljaalla kädellä/poskella ilmavirtausta"
   },
   {
     question: "A: Mitkä ovat kolme tapaa ilmateiden aukipitoon?",
@@ -17,7 +17,7 @@ const cards = [
   },
   {
     question: "B: Mikä on neulatorakosenteesin (hätäkanavoinnin) lisäksi toinen hoitovaihtoehto paineilmarinnalle?",
-    answer: "Ilmatiiviiden sidosten raottaminen"
+    answer: "Toinen hoitovaihtoehto paineilmarinnalle on ilmatiiviin sidoksen raottaminen"
   },
   {
     question: "B: Mikä on paineilmarinnan ensiaputoimenpide ja miksi se on tärkeä?",
@@ -29,7 +29,7 @@ const cards = [
   },
   {
     question: "B: Miten ilmarinta hoidetaan taisteluensiavussa vaihe vaiheelta?",
-    answer: "1. Peitetään vammakohta ensin kädellä ja sitten ilmatiiviillä tai venttiilisiteellä.\n2. Kehotetaan hengittämään ulos ja pidättämään hengitystä ennen sidoksen asettamista.\n3. Aseta sidos ja kehota hengittämään normaalisti. Peitetään kaikki rintakehän lävistävät vammat\n4. Asetetaan haavoittunut kylkiasentoon vammapuoli alaspäin ja seurataan hengitystä.\n5. Jos ilmatiiviin sidoksen asettamisen jälkeen ilmenee paineilmarinnan oireita, raokataan sidosta tai puretaan paineilmarinta tarvittaessa."
+    answer: "1. Peitetään vammakohta ensin kädellä ja sitten ilmatiiviillä siteellä tai venttiilisiteellä.\n2. Kehotetaan hengittämään ulos ja pidättämään hengitystä ennen sidoksen asettamista.\n3. Aseta sidos ja kehota hengittämään normaalisti. Peitetään kaikki rintakehän lävistävät vammat\n4. Asetetaan haavoittunut kylkiasentoon vammapuoli alaspäin ja seurataan hengitystä.\n5. Jos ilmatiiviin sidoksen asettamisen jälkeen ilmenee paineilmarinnan oireita, raokataan sidosta tai puretaan paineilmarinta tarvittaessa."
   },
   {
     question: "B: Miten neulatorakosenteesi suoritetaan vaihe vaiheelta?",
@@ -88,10 +88,6 @@ const cards = [
     answer: "Silloin kun vuoto kohdistuu keuhko-onteloon, vatsaan tai lantioon"
   },
   {
-    question: "c: Miten sisäistä verenvuotoa voi paikantaa?",
-    answer: "Vammamekanismi\nTajunnantason lasku\nKipu tai kipuherkkyys\nKalpeus, heikko syke, rytmihäiriöt"
-  },
-  {
     question: "c: Mitkä ovat laskimoverenvuodon tunnusmerkit?",
     answer: "Veri on tasaisesti valuva\nVeri on väriltään tumman punaista, tai punaruskeaa"
   },
@@ -101,11 +97,11 @@ const cards = [
   },
   {
     question: "c: Mitä henkeä uhkaavassa raajaverenvuodossa tulee tehdä?",
-    answer: "Asetta kiristysside raajan tyveen ja kiristää sidettä kunnes verenvuoto tyrehtyy"
+    answer: "Asettaa kiristysside raajan tyveen ja kiristää sidettä kunnes verenvuoto tyrehtyy"
   },
   {
     question: "c: Mitä kiristyssiteen asettamisen jälkeen tulee tehdä?",
-    answer: "Merkitä kiristyssiteen asennusajankohta siteeseen tai iholle"
+    answer: "Merkitä kiristyssiteen asennusajankohta siteeseen tai iholle, myöhemmin myös potilaskorttiin"
   },
   {
     question: "C: Mitä menetelmää käytetään massiivisen verenvuoden hallintaan paikassa, jossa kiristyssidettä ei voida käyttää?",
@@ -168,19 +164,19 @@ const cards = [
     answer: "Kiristyssiteen asettamisen kellonajan\nKipulääkkeen antamisen kellonajan"
   },
   {
-    question: "Hengitystiheys levossa _________ kertaa minuutissa",
+    question: "E: Hengitystiheys levossa on normaalisti noin _________ kertaa minuutissa",
     answer: "10-20"
   },
   {
-    question: "Jos mahdollista, haavoittunut evakuoidaan yleensä heti...?",
+    question: "E: Jos mahdollista, haavoittunut evakuoidaan yleensä heti...?",
     answer: "...tilan vakauttamisen jälkeen"
   },
   {
-    question: "Jos rannesyke tuntuu, verenpaineen yläpaine on varmasti yli _____\nJos vain kaulavaltimopulssi tuntuu, verenpaineen yläpaine on yli _____",
+    question: "E: Jos rannesyke tuntuu, verenpaineen yläpaine on varmasti yli _____\nJos vain kaulavaltimopulssi tuntuu, verenpaineen yläpaine on yli _____",
     answer: "80\n60"
   },
   {
     question: "Kenen tehtäviin kuuluu taisteluensiavun kouluttaminen omalle ryhmälleen?",
     answer: "Taistelupelastajan"
   }
-]
+];
